@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Start()
     {
-        current_health = max_health;
+        //current_health = max_health;
         //healthBar.UpdateHealthBar(max_health, current_health);
         dead = false;
     }
@@ -42,7 +42,7 @@ public class EnemyHealth : MonoBehaviour
     public void Die()
     {
         Instantiate(life_essence,this.transform.position, this.transform.rotation);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }
