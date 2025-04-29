@@ -30,7 +30,7 @@ public class GameHandler : MonoBehaviour
         marine4_healthscript = marine4.GetComponent<EnemyHealth>();
         marine5_healthscript = marine5.GetComponent<EnemyHealth>();
         marine6_healthscript = marine6.GetComponent<EnemyHealth>();
-        //Load();
+        Load();
         SaveObject saveObject = new SaveObject
         {
             orbsAmount = 5,
